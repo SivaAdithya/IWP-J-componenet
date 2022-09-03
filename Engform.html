@@ -1,0 +1,181 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            transition: background-color .5s;
+            background-color: aquamarine;
+        }
+        h2 {
+            background-color: #6002EE;
+            color: white;
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #6002EE;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #E1BEE7;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 20px;
+            }
+
+            .sidenav a {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        Each question has only one right answer. The questions test your understanding of grammar and different tenses(past,presnt,present continous)
+        <br>
+        The final score will be displayed after submission. <br><br>
+        <p style="font-family:sans-serif; color:rgb(0, 0, 0)">Any issues contact<br>Number:....<br>Email:...</p>
+    </div>
+    <div id="main">
+        <h2>Quiz</h2><br>
+        <form action="English.php" method="GET">
+            <ol>
+                <li>
+                    <h3>The cat will....away</h3>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                        <label for="question-1-answers-A">A) Ran </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+                        <label for="question-1-answers-B">B) Run</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+                        <label for="question-1-answers-C">C) Running</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>The ball is ..... down the hill</h3>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
+                        <label for="question-2-answers-A">A) Rolled</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
+                        <label for="question-2-answers-B">B) Roll</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
+                        <label for="question-2-answers-C">C) Rolling</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>They were..... cricket yestarday</h3>
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
+                        <label for="question-3-answers-A">A) played</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
+                        <label for="question-3-answers-B">B) play</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
+                        <label for="question-3-answers-C">C) playing</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>He....over the railing and..... down</h3>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
+                        <label for="question-4-answers-A">A) Jumped and falled</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
+                        <label for="question-4-answers-B">B) Jump and fall</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
+                        <label for="question-4-answers-C">C) Jumped and fell</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>It was..... yestarday so we did not ..... to the movies</h3>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">A) rained and went</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">B) rainning and go</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">C) rain and going</label>
+                    </div>
+                </li>
+            </ol>
+            <input type="submit" value="Submit" class="submitbtn" />
+    </form>
+        <span style="font-size:15px;cursor:pointer" onclick="openNav()">Instructions</span>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "210px";
+            document.getElementById("main").style.marginLeft = "210px";
+            document.body.style.backgroundColor = "#CFD8DC";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "#CFD8DC";
+        }
+    </script>
+
+</body>
+
+</html>

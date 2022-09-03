@@ -1,0 +1,92 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    color:rgb(61, 19, 61);
+    background-color: rgb(182, 121, 194);
+}
+
+.topnav{
+    background-color: rgb(87, 82, 82);
+    overflow:hidden;
+}
+
+.topnav a{
+    float:left;
+    color: #d4c5c5;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav #right{
+    float:right;
+    color: #d4c5c5;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: rgb(41, 38, 38);
+    color: rgb(255, 255, 255);
+    
+}
+
+.topnav a.active {
+    background-color: #cb4fd6;
+    color: white;
+}
+
+.logo{
+    color:rgb(71, 54, 71);
+}
+
+.logo img{
+    height:400px;
+    width:400px;
+    float: left;
+    margin-left: 20px;
+}
+
+.logo #info1{
+    position:absolute;
+    left:65%;
+    text-align: right;
+    float: right;
+    font-size:45px;
+}
+.logo #info2{
+    position:absolute;
+    left:65%;
+    text-align: right;
+    float: right;
+    font-size:30px;
+}
+
+.logo button{
+    float:right;
+    text-align: left;
+    padding: 14px 16px;
+    top:65%;
+    margin:25px;
+    margin-right: 145px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border:0px;
+}
+
+.logo button:hover{
+    cursor: pointer;
+}
+
+.logo #b1{
+    background-color: rgb(133, 89, 133);
+}
+
+.logo #b2{
+    background-color: #d6b7da;
+}
